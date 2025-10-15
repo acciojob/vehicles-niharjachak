@@ -10,6 +10,30 @@ public class Vehicle {
         this.name= name;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getCurrentSpeed() {
+        return currentSpeed;
+    }
+
+    public void setCurrentSpeed(int currentSpeed) {
+        this.currentSpeed = currentSpeed;
+    }
+
+    public int getCurrentDirection() {
+        return currentDirection;
+    }
+
+    public void setCurrentDirection(int currentDirection) {
+        this.currentDirection = currentDirection;
+    }
+
     public void steer(int direction){
         //direction is in degrees, add it to the current direction
         currentDirection=direction;
@@ -27,15 +51,4 @@ public class Vehicle {
         System.out.println("stop method called - The vehicle is stopped");
     }
 
-    public int getCurrentDirection() {
-        return currentDirection;
-    }
-
-    public int getCurrentSpeed() {
-        return currentSpeed;
-    }
-
-    public void setCurrentSpeed(int currentSpeed) {
-        this.currentSpeed = currentSpeed;
-    }
 }
